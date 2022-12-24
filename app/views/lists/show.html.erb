@@ -4,7 +4,7 @@
   </div>
   <span class="movie-tag"><%= pluralize(@list.movies.size, "movie") %></span>
 </div>
-<div class="container mb-5" <%= cl_image_tag @list.photo.krails sey, height: 300, width: 400, crop: :fill %>>
+<div class="container mb-5" <%= cl_image_tag @list.photo.krails, height: 300, width: 400, crop: :fill %>>
   <div class="d-flex justify-content-between my-4">
     <span class="mb-2 d-block"><small><em class="text-muted"><%= "You haven't saved any movies yet!" if @list.movies.empty? %></em></small></span>
     <div>
